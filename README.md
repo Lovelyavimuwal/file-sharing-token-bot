@@ -239,7 +239,7 @@ stats - checking your bot uptime
 
 
 💬 Support
-Join Our [Telegram Group](https://www.telegram.dog/ultroidofficial_chat) For Support/Assistance And Our [Channel](https://www.telegram.dog/ultroid_official) For Updates.   
+Join Our [Telegram Group](https://www.telegram.dog/student_movies) For Support/Assistance And Our [Channel](https://www.telegram.dog/student_movies) For Updates.   
    
 Report Bugs, Give Feature Requests There..   
 
