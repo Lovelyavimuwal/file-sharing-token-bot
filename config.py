@@ -37,7 +37,8 @@ IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID", "https://t.me/movies_request_search_group_2024/278") # shareus ka tut_vid he 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001852714321 -1002229388659"))
+#FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001852714321 -1002229388659"))
+FORCE_SUB_CHANNEL = os.environ.get("FORCE_SUB_CHANNEL", "-1001852714321 -1002229388659").split()
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
