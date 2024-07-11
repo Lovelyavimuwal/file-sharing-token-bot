@@ -1,4 +1,3 @@
-
 from aiohttp import web
 from plugins import web_server
 
@@ -45,7 +44,7 @@ class Bot(Client):
         try:
             db_channel = await self.get_chat(CHANNEL_ID)
             self.db_channel = db_channel
-            test = await self.send_message(chat_id = db_channel.id, text = "Test Message")
+            test = await self.send_message(chat_id=db_channel.id, text="Test Message")
             await test.delete()
         except Exception as e:
             self.LOGGER(__name__).warning(e)
@@ -60,7 +59,7 @@ class Bot(Client):
 ░╚════╝░░╚════╝░╚═════╝░╚══════╝
                                           """)
         self.username = usr_bot_me.username
-        #web-response
+        # web-response
         app = web.AppRunner(await web_server())
         await app.setup()
         bind_address = "0.0.0.0"
@@ -69,3 +68,7 @@ class Bot(Client):
     async def stop(self, *args):
         await super().stop()
         self.LOGGER(__name__).info("Bot stopped.")
+
+if __name__ == "__main__":
+    bot = Bot()
+    bot.run()
